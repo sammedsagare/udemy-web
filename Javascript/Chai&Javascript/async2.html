@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Zammed Zagare</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+    <script>
+      document.querySelector("#start").addEventListener("click", function () {
+        const sayDate = function (str) {
+          console.log(str, Date.now());
+        };
+        console.log("Started!");
+
+        const intID = setInterval(sayDate, 1000, "hello");
+
+        document.querySelector("#stop").addEventListener("click", function () {
+          clearInterval(intID);
+          console.log("Stopped!");
+        });
+      });
+    </script>
+  </body>
+</html>
