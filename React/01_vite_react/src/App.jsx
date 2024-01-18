@@ -1,7 +1,12 @@
+import Name from "./name"
+
 function App() {
 
   return (
-   <h1>Sammed Sagare</h1>
+    <>
+   <Name /> 
+   <h1>hello wolrd</h1>
+   </>
   )
 }
 

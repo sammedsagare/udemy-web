@@ -1,5 +1,11 @@
+import Name from "./Name";
+
 function App() {
-  return <h1>Sammed Sagare</h1>;
+  return (
+    <>
+      <Name />
+    </>
+  );
 }
 
 export default App;
